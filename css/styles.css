@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+
+header {
+  height: 150px;
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 20px;
+  position: relative;
+  border: 1px solid pink;
+  background: #FFFBF5;
+  background: linear-gradient(#FFFBF5, #F0F0F0);
+  background: -webkit-linear-gradient(#FFFBF5, #F0F0F0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFBF5, #F0F0F0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFBF5, #F0F0F0); /* For Firefox 3.6 to 15 */
+}
+
+h1 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+#main-container {
+  padding: 0 20px 0 20px;
+}
+
+
+#left-div > img {
+  width: 100%;
+  margin: 10px;
+  position: relative;
+}
+
+/*.caption */
+
+#left-div > img:after {
+ font-size: .9em;
+ 
+}
+/*#left-div > img:after {
+  content:""
+}*/
+
+#sidebar {
+  width: 400px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#sidebar p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+
+font-family: 'Oxygen', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
