@@ -5,10 +5,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery.nthEverything.js"></script>
     <title>Buy Me!</title>
   </head>
   <body>
-    <header>
+    <header id="util-nav">
+      <ul>
+        <li>LogOut</li>
+        <li>Cart</li>
+        <li>WishList</li>
+        <li>Account</li>
+      </ul>
+    </header>
+    <header id="main-header">
       <div id="inner-header">
         <h1>Roller Bench</h1>
         <div class="utility">
@@ -35,6 +44,12 @@
         </div>
       </div>
       <div id="sidebar">
+        <div id="price-box">
+          <h1>$6,000</h1>
+          <h5>Send me a message below to find out about shipping or delivery</h5>
+          <button id="purchase" type="button" name="button">Purchase</button>
+          <button id="save" type="button" name="button">Save for Later</button>
+        </div>
         <h2>Description</h2>
         <p>
           Bringing people together since 2011, the Roller Bench is guaranteed to make people smile. Originally titled simply "Bench" by artist Brian Rush, its users have been making it their own with nicknames like The Friendship Bench and The Can't-Stay-Mad-At-You Bench.
@@ -45,12 +60,19 @@
           <li><a href="http://www.neatorama.com/2012/06/27/brian-rushs-bench/">Neatorama</a></li>
           <li><a href="http://cheezburger.com/6376455936">FAIL Blog (as a win!)</a></li>
         </ul>
-        <button type="button" name="button">Purchase</button>
-        <button type="button" name="button">Contact</button>
+        <h2>About the Artist</h2>
+        <p>
+          Brian Rush wants to make you embarrass yourself. But only a little bit. Just as a bit of confusion always precedes learning, embarrassment is the harbinger of social growth.
+        </p>
+        <p>
+          Brian Rush works as a UX designer and artist in Portland, OR. He loves <a href="https://en.wikipedia.org/wiki/Spoonerism">spoonerisms</a> and sheyboard kortcuts.
+        </p>
         <form class="contact">
+          <h2>Inquire</h2>
           <input type="text" name="name" value="" placeholder="Your Name">
           <input type="email" name="email" value="" placeholder="Your Email Address">
-          <input type="text" name="message" value="" placeholder="Your Message">
+          <input id="message" type="text" name="message" value="" placeholder="Your Message">
+          <button type="button" name="button">Send</button>
         </form>
       </div>
     </div>
