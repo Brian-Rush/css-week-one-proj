@@ -1,20 +1,26 @@
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
 header {
   height: 150px;
-  max-width: 1280px;
-  margin: auto;
+  width: 100%;
   padding-left: 20px;
   position: relative;
   border: 1px solid pink;
   background: #FFFBF5;
   background: linear-gradient(#FFFBF5, #F0F0F0);
   background: -webkit-linear-gradient(#FFFBF5, #F0F0F0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFFBF5, #F0F0F0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFFBF5, #F0F0F0); /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(#FFFBF5, #F0F0F0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FFFBF5, #F0F0F0); /* For Firefox 3.6 to 15 */
+}
+
+#inner-header {
+  width: 1280px;
+  margin: auto;
+
 }
 
 h1 {
@@ -25,27 +31,47 @@ h1 {
 
 #main-container {
   padding: 0 20px 0 20px;
+  width: 1280px;
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
 }
 
+.big-img-wrapper {
+  display: inline-block;
+  position: relative;
+}
 
-#left-div > img {
-  width: 100%;
-  margin: 10px;
+.big-img-wrapper > img {
+  width: 800px;
+  /*margin: 10px;*/
   position: relative;
 }
 
 /*.caption */
 
-#left-div > img:after {
- font-size: .9em;
- 
+.big-img-wrapper:hover:after {
+  box-sizing: border-box;
+  content:  'Roller Bench, Brian Rush, 2011, powder-coated aluminum and steel rollers, 36" x 78.5" x 28.5"';
+  font-size: .9em;
+  position: absolute;
+  height: 50px;
+  width: 800px;
+  color: #fffbf5;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  padding-top:15px;
+  padding-left:15px;
+  letter-spacing: 1px;
+  /*transition: */
 }
-/*#left-div > img:after {
-  content:""
-}*/
 
 #sidebar {
   width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 h2 {
@@ -56,6 +82,12 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
 }
+
+ul {
+  list-style: none;
+}
+
+
 
 font-family: 'Oxygen', sans-serif;
 font-family: 'Open Sans', sans-serif;
